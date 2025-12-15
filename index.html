@@ -1,17 +1,18 @@
-/ide-bisnis
-│
-├── index.html        (login)
-├── register.html     (daftar akun)
-├── dashboard.html    (beranda / feed)
-├── tambah.html       (tambah ide)
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   ├── auth.js       (login, register, logout)
-│   ├── ide.js        (CRUD ide bisnis)
-│   └── theme.js      (dark / light mode)
-│
-└── assets/
-    └── default.png   (opsional)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login | Ide Bisnis</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h2>Login</h2>
+
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+<button onclick="login()">Login</button>
+
+<p>Belum punya akun? <a href="register.html">Daftar</a></p>
+
+<script src="js/auth.js"></script>
+</body>
+</html>
